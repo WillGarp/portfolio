@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de William Marcello Garcia Pereira - Desenvolvedor Full Stack Júnior">
+    <meta name="keywords" content="desenvolvedor, web, portfolio, fullstack, javascript, python">
+    <meta name="author" content="William Marcello Garcia Pereira">
+    <meta name="theme-color" content="#0D1117">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2300CFFF'>W</text></svg>">
+    
+    <!-- Folha de Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>William Marcello - Desenvolvedor Full Stack Júnior</title>
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <span class="logo-icon">&lt;WM/&gt;</span>
+                <span class="logo-text">William</span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link" data-section="sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tecnologias" class="nav-link" data-section="tecnologias">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos" class="nav-link" data-section="projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link" data-section="contato">Contato</a>
+                </li>
+            </ul>
+            
+            <!-- Toggle Dark Mode -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro">
+                <span class="theme-icon">🌙</span>
+            </button>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <!-- Conteúdo Texto -->
+            <div class="hero-content">
+                <div class="hero-greeting">Olá, bem-vindo!</div>
+                <h1 class="hero-title">
+                    Eu sou <span class="gradient-text">William Marcello</span>
+                </h1>
+                <h2 class="hero-subtitle">Desenvolvedor Full Stack Júnior</h2>
+                <p class="hero-description">
+                    Apaixonado por tecnologia, desenvolvimento web e automação de processos. 
+                    Sempre buscando aprender novas tecnologias e criar soluções eficientes.
+                </p>
+                
+                <!-- Botões CTA -->
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/WillGarp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <span>GitHub</span>
+                        <span class="icon">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/williammarcello/ target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <span>LinkedIn</span>
+                        <span class="icon">→</span>
+                    </a>
+                    <a href="assets/cv/CV.pdf" download class="btn btn-secondary">
+                        <span>Download CV</span>
+                        <span class="icon">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ilustração Notebook (CSS Only) -->
+            <div class="hero-illustration">
+                <div class="laptop">
+                    <div class="laptop-screen">
+                        <div class="code-line">
+                            <span class="tag">&lt;div&gt;</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="keyword">const</span> dream = <span class="string">"developer"</span>;
+                        </div>
+                        <div class="code-line">
+                            <span class="keyword">if</span> (passion) {
+                        </div>
+                        <div class="code-line indent">
+                            <span class="function">buildAwesome</span>(<span class="string">"projects"</span>);
+                        </div>
+                        <div class="code-line">
+                            }
+                        </div>
+                        <div class="code-line">
+                            <span class="tag">&lt;/div&gt;</span>
+                        </div>
+                    </div>
+                    <div class="laptop-base"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ==================== SOBRE MIM ==================== -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            
+            <div class="about-container">
+                <!-- Foto/Avatar -->
+              <div class="about-image">
+    <div class="avatar">
+        <div class="avatar-placeholder">
+            <img src="assets/icons/foto.jpg" alt="Foto de William Marcello">
+        </div>
+    </div>
+</div>
+
+                <!-- Conteúdo -->
+                <div class="about-content">
+                    <p class="about-text">
+                        Sou um desenvolvedor apaixonado por criar soluções web modernas e eficientes. 
+                        Com experiência em suporte técnico e em transição para desenvolvimento de software, 
+                        trago uma perspectiva única de compreensão das necessidades dos usuários.
+                    </p>
+                    <p class="about-text">
+                        Minha jornada começou com curiosidade sobre como as coisas funcionam, 
+                        evoluindo para a paixão por escrever código limpo, criativo e bem estruturado.
+                        Busco constantemente aprender novas tecnologias e aplicar as melhores práticas.
+                    </p>
+
+                    <!-- Cards de Informações -->
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">📍</span>
+                            <h3>Localização</h3>
+                            <p>Paraná, Brasil
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">💼</span>
+                            <h3>Área de Atuação</h3>
+                            <p>Desenvolvimento Web</p>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🎓</span>
+                            <h3>Formação</h3>
+                            <p>Bootcamp Full Stack</p>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🚀</span>
+                            <h3>Objetivo</h3>
+                            <p>Criar impacto com código</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECNOLOGIAS ==================== -->
+    <section id="tecnologias" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Tecnologias</h2>
+            
+            <div class="tech-grid">
+                <!-- HTML5 -->
+                <div class="tech-card">
+                    <div class="tech-icon html">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Marcação semântica e estrutura web moderna</p>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="tech-card">
+                    <div class="tech-icon css">
+                        <span>◊</span>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Estilização responsiva e animações fluidas</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="tech-card">
+                    <div class="tech-icon js">
+                        <span>JS</span>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e manipulação do DOM</p>
+                </div>
+
+                <!-- Python -->
+                <div class="tech-card">
+                    <div class="tech-icon python">
+                        <span>🐍</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Backend e automação de processos</p>
+                </div>
+
+                <!-- Java -->
+                <div class="tech-card">
+                    <div class="tech-icon java">
+                        <span>☕</span>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Aplicações robustas e escaláveis</p>
+                </div>
+
+                <!-- Spring Boot -->
+                <div class="tech-card">
+                    <div class="tech-icon spring">
+                        <span>🍃</span>
+                    </div>
+                    <h3>Spring Boot</h3>
+                    <p>Framework Java para APIs REST</p>
+                </div>
+
+                <!-- Git -->
+                <div class="tech-card">
+                    <div class="tech-icon git">
+                        <span>⎇</span>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Versionamento e controle de código</p>
+                </div>
+
+                <!-- GitHub -->
+                <div class="tech-card">
+                    <div class="tech-icon github">
+                        <span>🐙</span>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Hospedagem de repositórios e colaboração</p>
+                </div>
+
+                <!-- SQL -->
+                <div class="tech-card">
+                    <div class="tech-icon sql">
+                        <span>⚙</span>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>Gerenciamento de banco de dados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+<section id="projetos" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        
+        <!-- Grid que será preenchida automaticamente -->
+        <div class="projects-grid" id="projectsGrid">
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                <p>Carregando projetos...</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ==================== CONTATO ==================== -->
+<section id="contato" class="contact">
+    <div class="container">
+        <h2 class="section-title">Vamos Conversar?</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <p class="contact-description">
+                    Estou sempre aberto a novas oportunidades e interessado em falar sobre 
+                    projetos, ideias criativas e como eu possa ajudar você.
+                </p>
+                
+                <div class="contact-links">
+                    <a href="https://github.com/WillGarp" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-icon">🐙</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>@WillGarp</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/williammarcello/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>William Marcello Garcia</p>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/5541991096867" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(41) 99109-6867</p>
+                        </div>
+                    </a>
+                    <a href="mailto:williammarcellowm@gmail.com?subject=Contato%20pelo%20Portfólio&body=Olá%20William!" class="contact-link">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>williammarcellwm@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; <span id="year">2024</span> William Marcello Garcia Pereira</p>
+                </div>
+                <div class="footer-message">
+                    <p>Desenvolvido com HTML, CSS, JavaScript e muito café ☕</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
